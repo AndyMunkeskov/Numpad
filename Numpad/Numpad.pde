@@ -9,7 +9,7 @@ float x0, x1, x2;
 float y0, y1, y2, y3, y4;
 //
 void setup() {
-  size (400, 600);
+  size (400, 700);
   appWidth = width;
   appHeight = height;
   //
@@ -19,11 +19,11 @@ void setup() {
   x0 = widthSquare*1/2;
   x1 = widthSquare*3/2;
   x2 = widthSquare*5/2;
-  y0 = widthSquare*3/2;
-  y1 = widthSquare*5/2;
-  y2 = widthSquare*7/2;
-  y3 = widthSquare*9/2;
-  y4 = widthSquare*13/2;
+  y0 = widthSquare*5/2;
+  y1 = widthSquare*7/2;
+  y2 = widthSquare*9/2;
+  y3 = widthSquare*11/2;
+  y4 = widthSquare*14/2;
 
   //
   //Nested FOR, reading rect() arrays
