@@ -45,7 +45,10 @@ void draw() {
   rect(x2, y3, widthSquare, heightSquare);
 } //End Draw
 //
-void mousePressed() {} //End mousePressed
+void mousePressed() {
+  //x0, y0, widthSquare, heightSquare
+  if (mouseX>x0 && mouseX<x0+widthSquare && mouseY>y0 && mouseY<y0+heightSquare ) println("1");
+} //End mousePressed
 //
 void keyPressed() {} //End keyPressed
 //
