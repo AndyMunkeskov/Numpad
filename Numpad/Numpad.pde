@@ -1,5 +1,12 @@
+
+
+
+//
 //global Varibles
-int appWidth, appHeight; //
+int appWidth, appHeight;
+float widthSquare, heightSquare;
+float x0, x1, x2;
+float y0, y1, y2, y3, y4;
 //
 void setup() {
   size (400, 600);
@@ -7,21 +14,36 @@ void setup() {
   appHeight = height;
   //
   //Population of rect() variables
-  rect(x0, y0, widthSquare, heightSquare);
-  rect(x0, y1, widthSquare, heightSquare);
-  rect(x0, y2, widthSquare, heightSquare);
-  rect(x0, y3, widthSquare, heightSquare);
-  rect(x0, y4, widthSquare, heightSquare);
-  rect(x0, y5, widthSquare, heightSquare);
-  
-  rect(x1, y, widthSquare, heightSquare);
-  rect(x2, y, widthSquare, heightSquare);
+  widthSquare = appWidth*1/4 ;
+  heightSquare = widthSquare ;
+  x0 = widthSquare*1/2;
+  x1 = widthSquare*3/2;
+  x2 = widthSquare*5/2;
+  y0 = widthSquare*3/2;
+  y1 = widthSquare*5/2;
+  y2 = widthSquare*7/2;
+  y3 = widthSquare*9/2;
+  y4 = widthSquare*13/2;
+
   //
   //Nested FOR, reading rect() arrays
   //
   } //End Setup
 //
-void draw() {} //End Draw
+void draw() {
+  rect(x0, y0, widthSquare, heightSquare);
+  rect(x0, y1, widthSquare, heightSquare);
+  rect(x0, y2, widthSquare, heightSquare);
+  rect(x0, y3, widthSquare, heightSquare);
+  rect(x1, y0, widthSquare, heightSquare);
+  rect(x1, y1, widthSquare, heightSquare);
+  rect(x1, y2, widthSquare, heightSquare);
+  rect(x1, y3, widthSquare, heightSquare);
+  rect(x2, y0, widthSquare, heightSquare);
+  rect(x2, y1, widthSquare, heightSquare);
+  rect(x2, y2, widthSquare, heightSquare);
+  rect(x2, y3, widthSquare, heightSquare);
+} //End Draw
 //
 void mousePressed() {} //End mousePressed
 //
