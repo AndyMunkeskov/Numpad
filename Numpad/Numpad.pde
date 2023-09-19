@@ -18,7 +18,14 @@ void setup() {
   //Population of rect() variables
   widthSquare = appWidth*1/4 ;
   heightSquare = widthSquare ;
-  x0 = widthSquare*1/2;
+  for (int i=0; i>numPadColumns ; i++ ) { // i stops for x not y
+    for ( int j=1; j<numPadRows ; j+=2 ) {
+    if ( i<numPadColumns) x[i] = widthSquare*j/2;
+    y[i] = widthSquare*5/2;
+    } //End FOR
+  } //End FOR
+ /*
+  x0 = 
   x1 = widthSquare*3/2;
   x2 = widthSquare*5/2;
   y0 = widthSquare*5/2;
@@ -26,7 +33,7 @@ void setup() {
   y2 = widthSquare*9/2;
   y3 = widthSquare*11/2;
   y4 = widthSquare*14/2;
-
+ */
   //
   //Nested FOR, reading rect() arrays
   //
