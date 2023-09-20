@@ -40,7 +40,18 @@ void setup() {
   } //End Setup
 //
 void draw() {
+  for () {
+    for () {
+      rect(x[i], y[j], widthSquare, heightSquare);
+    }//End for
+  }//End for
+  
+  
+  
+  
+  
   /*
+  
   rect(x0, y0, widthSquare, heightSquare);
   rect(x0, y1, widthSquare, heightSquare);
   rect(x0, y2, widthSquare, heightSquare);
