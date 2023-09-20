@@ -22,8 +22,13 @@ void setup() {
   for (int i=0; i<numPadColumns; i++ ) {
    // i stops for x not y
     x[i] = widthSquare*(2*i+1)/2;
-    println("Inside X", x[i] );
-   }
+    println("Inside x", x[i] );
+   }//END for
+   for (int i=0; i<numPadRows; i++ ) {
+     y[i] = widthSquare*(2*i+5)/2;
+     println("Inside y", y[i] );
+   }//End for
+   
   //println("Inside", y[i]);
   //y[i] = widthSquare*5/2;
   //End FOR
