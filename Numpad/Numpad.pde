@@ -19,13 +19,14 @@ void setup() {
   widthSquare = appWidth*1/4 ;
   heightSquare = widthSquare ;
   //Error with printArray
-  for (int i=0; i>numPadColumns ; i++ ) { // i stops for x not y
-    for ( int j=1; j<numPadRows ; j+=2 ) {
-    if ( i<numPadColumns) x[i] = widthSquare*j/2;
-    y[i] = widthSquare*5/2;
-    println("Inside", y[i]);
-    } //End FOR
-  } //End FOR
+  for (int i=0; i<numPadColumns; i++ ) {
+   // i stops for x not y
+    x[i] = widthSquare*(2*i+1)/2;
+    println("Inside X", x[i] );
+   }
+  //println("Inside", y[i]);
+  //y[i] = widthSquare*5/2;
+  //End FOR
   printArray(x);
   printArray(y);
   //
@@ -52,7 +53,9 @@ void draw() {
 //
 void mousePressed() {
   //x0, y0, widthSquare, heightSquare
+  /*
   if (mouseX>x && mouseX<x+widthSquare && mouseY>y && mouseY<y+heightSquare ) println("1");
+  */
 } //End mousePressed
 //
 void keyPressed() {} //End keyPressed
