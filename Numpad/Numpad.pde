@@ -40,8 +40,8 @@ void setup() {
   } //End Setup
 //
 void draw() {
-  for () {
-    for () {
+  for ( int i=0; i<numPadColumns; i++) {
+    for ( int j=0; j<numPadRows-1; j++ ) {
       rect(x[i], y[j], widthSquare, heightSquare);
     }//End for
   }//End for
@@ -69,9 +69,10 @@ void draw() {
 //
 void mousePressed() {
   //x0, y0, widthSquare, heightSquare
-  /*
-  if (mouseX>x && mouseX<x+widthSquare && mouseY>y && mouseY<y+heightSquare ) println("1");
-  */
+  for (int i=0; i<1 ; i++) {
+    if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[i] && mouseY<y[i]+widthSquare);
+  }
+  
 } //End mousePressed
 //
 void keyPressed() {} //End keyPressed
