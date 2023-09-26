@@ -4,6 +4,7 @@ void setup() {
   appWidth = width;
   appHeight = height;
   //
+  background( #4411BC );
   //Population of rect() variables
   widthSquare = appWidth*1/4 ;
   heightSquare = widthSquare ;
@@ -31,7 +32,9 @@ void setup() {
 void draw() {
   for ( int i=0; i<numPadColumns; i++) {
     for ( int j=0; j<numPadRows-1; j++ ) {
+      stroke(255, 255, 255);
       rect(x[i], y[j], widthSquare, heightSquare);
+    fill(#000000);
     }//End for
   }//End for
 
