@@ -1,5 +1,5 @@
 int appWidth, appHeight;
-float widthSquare, heightSquare;
+float widthSquare, heightSquare, border=0.0;
 int numPadColumns = 3;
 float[] x = new float [numPadColumns];
 int numPadRows = 5;

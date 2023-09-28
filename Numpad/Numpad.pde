@@ -7,23 +7,31 @@ void setup() {
   background( #4411BC );
   //Population of rect() variables
   widthSquare = appWidth*1/4 ;
-  heightSquare = widthSquare ;
-  //Error with printArray
+  heightSquare = widthSquare;
+  if ( widthSquare*7 <= appHeight ) {
+    //println("true");
+    //Empty if
+  } else {
+    println("false");
+      widthSquare = heightSquare = appHeight*1/7;
+      border = appWidth*1/4; 
+      border = border*1/2;
+  } //End Height Error Check
   for (int i=0; i<numPadColumns; i++ ) {
     // i stops for x not y
     x[i] = widthSquare*(2*i+1)/2;
-    println("Inside x", x[i] );
+    //println("Inside x", x[i] );
   }//END for
   for (int i=0; i<numPadRows; i++ ) {
     y[i] = widthSquare*(2*i+5)/2;
-    println("Inside y", y[i] );
+    //println("Inside y", y[i] );
   }//End for
 
   //println("Inside", y[i]);
   //y[i] = widthSquare*5/2;
   //End FOR
-  printArray(x);
-  printArray(y);
+  //printArray(x);
+  //printArray(y);
   //
   //Nested FOR, reading rect() arrays
   //
@@ -34,7 +42,7 @@ void draw() {
     for ( int j=0; j<numPadRows-1; j++ ) {
       stroke(255, 255, 255);
       rect(x[i], y[j], widthSquare, heightSquare);
-    fill(#000000);
+      fill(#000000);
     }//End for
   }//End for
 
@@ -65,18 +73,18 @@ void mousePressed() {
         println("Button #:", i+0);
       }
       if (mouseX>x[i+1] && mouseX<x[i+1]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
-     
+
         String equals = "=";
         if (equals.equals("=")) {
-        println("=");
+          println("=");
         }
       }
-      
+
       if (mouseX>x[i+2] && mouseX<x[i+2]+widthSquare && mouseY>y[j+3] && mouseY<y[j+3]+widthSquare ) {
-     
-        String equals = "<";
-        if (equals.equals("<")) {
-        println("<");
+
+        String equals = "00";
+        if (equals.equals("00")) {
+          println("00");
         }
       }
       if (mouseX>x[i] && mouseX<x[i]+widthSquare && mouseY>y[j+2] && mouseY<y[j+2]+widthSquare ) {
